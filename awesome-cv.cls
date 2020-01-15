@@ -105,7 +105,7 @@
 \hypersetup{%
   pdftitle={Resume for Szabó Krisztián},
   pdfauthor={Szabó Krisztián},
-  pdfsubject={erratic@yourstruly.sx},
+  pdfsubject={developer.krisz@gmail.com},
   pdfkeywords={Szabó Krisztián, resume, Python, Java, JSON/XML, LaTeX}
 }
 

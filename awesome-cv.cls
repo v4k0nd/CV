@@ -106,7 +106,7 @@
   pdftitle={Resume for Szabó Krisztián},
   pdfauthor={Szabó Krisztián},
   pdfsubject={developer.krisz@gmail.com},
-  pdfkeywords={Szabó Krisztián, resume, Python, Java, JSON/XML, LaTeX}
+  pdfkeywords={Szabó Krisztián, Python, Java, Numpy, Data Science, Cyber Security, LaTeX}
 }
 
 

@@ -3,7 +3,8 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
-
+\usepackage{fontawesome5}
+\usepackage{tikz}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -14,7 +15,7 @@
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 
-\colorlet{awesome}{awesome-skyblue}
+\colorlet{awesome}{awesome-darknight}
 
 % Uncomment if you would like to specify your own color
 
@@ -42,10 +43,10 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 \name{Krisztián}{Szabó}
-\position{Bachelor Student in Technical Computer Scinece \href{https://www.utwente.nl/en/}{@UTwente}}  % {\enskip\cdotp\enskip}
+\position{Master Student in Computer Science \href{https://www.utwente.nl/en/}{@UTwente}}  % {\enskip\cdotp\enskip}
 % \address{}
 
-\email{developer.krisz@gmail.com}
+\email{developer.krisz+cv@gmail.com}
 % \github{}
 % \git{}
 % \gitlab{gitlab-id}
@@ -53,6 +54,7 @@
 \mobile{(+31) 6 16853598}
 %\homepage{}
 \linkedin{k-szabo-dev}
+\twitter{V4K0ND}
 % \keybase{}
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
@@ -65,9 +67,14 @@
 %-------------------------------------------------------------------------------
 \begin{document}
 
+% invisible text
+\begin{tikzpicture}
+    \node[text opacity=0.02]{\tiny AI, Artificial Intelligence, ML, Machine Learning, Pipelines, Docker, ML OPS};
+\end{tikzpicture}
+\\
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader 
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
@@ -82,10 +89,12 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/projects.tex}
 \input{cv/education.tex}
+\input{cv/experience.tex}
+\input{cv/projects.tex}  % \clearpage 
+% \input{cv/presentation.tex}
 \input{cv/extracurricular.tex}
+%-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
 \end{document}
